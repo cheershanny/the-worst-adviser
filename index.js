@@ -84,14 +84,13 @@ const benefitsArr = [
 ]
 
 
-// end message: 
-// Do you know? <Doing something> in the <location>.lowercase <give you the benefit>
+
 
 const message = () => {
     let taskIndex = Math.floor(Math.random() * (tasksArr.length));
     let benefitIndex = Math.floor(Math.random() * (benefitsArr.length));
     let locationIndex = Math.floor(Math.random() * (locationsArr.length));
-    return `Do you know, ${tasksArr[taskIndex].toLowerCase()} in the ${locationsArr[locationIndex].toLowerCase()} ${benefitsArr[benefitIndex]}.`;
+    return `Do you know, ${tasksArr[taskIndex].toLowerCase()} in the new ${locationsArr[locationIndex].toLowerCase()} ${benefitsArr[benefitIndex]}.`;
 }
 
 console.log(message());
