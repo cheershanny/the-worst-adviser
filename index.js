@@ -83,9 +83,6 @@ const benefitsArr = [
     'might feel better than your ex-boyfriends'
 ]
 
-
-
-
 const message = () => {
     let taskIndex = Math.floor(Math.random() * (tasksArr.length));
     let benefitIndex = Math.floor(Math.random() * (benefitsArr.length));
